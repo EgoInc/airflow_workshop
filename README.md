@@ -44,11 +44,11 @@ pip install -r requirements.txt
 
 Запустите dag get_data и убедитесь в том, что dag завершен успешно.
 
-![image-20241020204829623](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241020204829623.png)
+![image](https://github.com/user-attachments/assets/970e5f58-c2c9-42e6-9960-b418eb949541)
 
 *Чтобы запустить успешно потребовалось добавить обработчик ошибок в get_wp_descriptions иначе там все ломалось при пустых ответах, проверка того что все успешно загрузилось ниже*
 
-![image-20241020205153586](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241020205153586.png)
+![image](https://github.com/user-attachments/assets/de5414d8-da3c-49e0-a684-b1fd714ae815)
 
 ## Задание 2 оп курсу "Прикладные пакеты для анализа данных" 
 
@@ -87,11 +87,11 @@ pip install -r requirements.txt
 ## Эндпойнты
 - Структные подразделения: https://op.itmo.ru/api/record/structural/workprogram (см. dags/get_data.py)
 
-![image-20241020205335176](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241020205335176.png)
+![image](https://github.com/user-attachments/assets/e4357e3f-abbd-43a5-827c-877ae33bc47e)
 
 - Рабочие программы и статусы: https://op.itmo.ru/api/record/academic_plan/academic_wp_description/all (см. dag/get_data.py)
 
-  ![image-20241020205507388](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241020205507388.png)
+![image](https://github.com/user-attachments/assets/8f1d0dc9-80c9-411e-81f9-0b828d637d08)
 
 - Рабочие программы ипо годам https://op.itmo.ru/api/record/academicplan/get_wp_by_year/ - (см. dag/get_disc_by_year.py)
 
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 
 ## Выбираем SCD2 - подход
 
-![image-20241029105524849](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241029105524849.png)
+![image](https://github.com/user-attachments/assets/55e5ec09-1bfb-446d-8184-fced194061f2)
 
 ```python
 if current_record:
@@ -142,15 +142,15 @@ WHERE sw.is_current = TRUE
 
 Схема:
 
-![image-20241029114706745](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241029114706745.png)
+![image](https://github.com/user-attachments/assets/795c54bd-917f-4206-81f7-dbbd02894631)
 
 Схема миграции с DDS => CDM
 
-![image-20241029114853293](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241029114853293.png)
+![image](https://github.com/user-attachments/assets/f6aa9162-ee5c-48a0-9d66-4399c9ce2743)
 
 Итоговый дашборд:
 
-![image-20241029122745687](C:\Users\Vasya\AppData\Roaming\Typora\typora-user-images\image-20241029122745687.png)
+![image](https://github.com/user-attachments/assets/6f000c29-07e1-43bd-b304-5d38fc735ae9)
 
 ### Учебные планы verified
 
